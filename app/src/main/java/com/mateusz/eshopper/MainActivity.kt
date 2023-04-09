@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
             category.add(task)
             showTasks(category)
         } else {
-            showErrorDialog("Cannot add more than 10 tasks per category.")
+            showErrorDialog("Nie możesz dodać więcej niż 10 zadań!")
         }
         input.text.clear()
     }
@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showErrorDialog(message: String = "Please enter a valid task name.") {
+    private fun showErrorDialog(message: String = "Wpisz coś! Powietrza nie kupisz!") {
         val dialog = AlertDialog.Builder(this)
             .setTitle("Error")
             .setMessage(message)
